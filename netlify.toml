@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Optional: enable clean URLs and SPA fallback just in case future routes are added
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

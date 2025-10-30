@@ -267,17 +267,26 @@ Add `netlify` attribute to form:
 
 ### Netlify
 
-```bash
-npm run build
-# Deploy the `dist` folder
-```
+This repo includes a `netlify.toml` configured to build with `npm run build` and publish `dist/`.
+
+Steps:
+
+1. Push to Git (GitHub/GitLab/Bitbucket)
+2. In Netlify: New site from Git → pick the repo
+3. Build command: `npm run build` (auto)
+4. Publish directory: `dist` (auto)
 
 ### Vercel
 
-```bash
-npm run build
-# Deploy the `dist` folder
-```
+This repo includes a `vercel.json` configured for a static Vite build output at `dist/`.
+
+Steps:
+
+1. Push to Git (GitHub/GitLab/Bitbucket)
+2. In Vercel: Import Project → pick the repo
+3. Framework detected: Vite (auto)
+4. Build command: `npm run build`
+5. Output directory: `dist`
 
 ### GitHub Pages
 
